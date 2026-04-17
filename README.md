@@ -1,41 +1,88 @@
-# Damage Assessment System - Hardened Deployment
+<div align="center">
 
-This project provides a secure, industry-grade implementation for disaster damage assessment using Roboflow Computer Vision and a FastAPI backend proxy.
+# 🌍 AI Damage Assessment Intel System
+**A real-time, high-performance disaster intelligence and computer vision pipeline.**
 
-## Security Features
-- **Zero Secret Exposure**: Roboflow API keys are stored in backend environment variables and never sent to the client browser.
-- **Secure Proxy**: All inference requests are proxied through a hardened FastAPI endpoint.
-- **Input Validation**: Backend strictly validates file types and sizes.
-- **CORS Protection**: Configured to restrict access to trusted origins.
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React / Vite](https://img.shields.io/badge/React_Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Roboflow](https://img.shields.io/badge/Roboflow-6706CE?style=for-the-badge&logo=roboflow&logoColor=white)](https://roboflow.com/)
 
-## Setup Instructions
+---
 
-1. **Rotate API Key**: 
-   - Immediately rotate your Roboflow API key in the [Roboflow Dashboard](https://app.roboflow.com/settings/api).
-   - The old key (previously in `index.html`) is permanently compromised.
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWEycmE2NmhzZmtmczc0Zno4NjQxZ3pxZnp5bnQ2aXFnYWh2M2hkcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LMB3WqcKjENwV821Za/giphy.gif" alt="Scanning Animation" width="100%" style="border-radius: 12px; border: 1px solid rgba(255,183,3,0.3);"/>
+</p>
 
-2. **Configure Environment**:
-   - Rename `.env.example` to `.env`.
-   - Update `ROBOFLOW_API_KEY` with your new rotated key.
-   - (Optional) Modify `ROBOFLOW_MODEL_ID` if using a different version.
+</div>
 
-3. **Install Dependencies**:
+## 🚀 Overview
+
+The **Damage Assessment System** is an industry-grade, zero-trust web application designed for rapid disaster telemetry analysis. By utilizing **Roboflow's serverless workflows** and a custom **FastAPI proxy**, it analyzes airborne drone imagery or satellite feeds to classify disasters (Floods, Fires, Tornadoes) and assesses structural damage severity instantly.
+
+### ✨ Key Features
+- **Zero Secret Exposure**: Roboflow API keys are proxy-secured via the backend.
+- **GSAP 3D Glitch Interface**: Deeply immersive, Awwwards-style frontend with real-time SVG intelligence gauges.
+- **Base64 Inference Engine**: Serverless image chunking and streaming.
+- **Dual-Mode Telemetry**: Choose between Single Scan or Before/After structural comparisons.
+
+---
+
+## 🏗️ Architecture
+
+The project has been **segregated** into a strict Frontend (`Github repo`) and Backend (`packaged zip`) architecture for maximum security.
+
+* **Frontend**: React, Vite, TSX, Tailwind CSS, GSAP
+* **Backend Hub**: Python FastAPI, Uvicorn, Inference-SDK
+
+---
+
+## 💻 1. Frontend Setup (React/Vite)
+
+This codebase controls the highly-interactive UI.
+
+```bash
+# 1. Clone the repository
+git clone git@github.com:Aditgm/damage_assessment.git
+cd damage_assessment
+
+# 2. Install Dependencies
+npm install
+
+# 3. Launch Development Server
+npm run dev
+```
+> The dashboard will spin up at `http://localhost:5173`. It expects the local backend gateway to be active on port `8000`.
+
+---
+
+## 🔒 2. Backend Setup (FastAPI Proxy)
+
+> **Note**: For security, backend files are not stored in this GitHub repository. Obtain the `backend_release.zip` package.
+
+Once extracted:
+
+1. **Configure API Keys**: Rename `.env.example` -> `.env` and insert your actual `ROBOFLOW_API_KEY`.
+2. **Install Requirements**:
    ```bash
    pip install -r requirements.txt
    ```
-
-4. **Run Secure Server**:
+3. **Start the API Server**:
    ```bash
-   python app.py
-   # OR
-   uvicorn app:app --reload
+   python -m uvicorn app:app --host 127.0.0.1 --port 8000
    ```
+The proxy runs natively holding endpoints at `/scan`. 
 
-5. **Launch Interface**:
-   - Access the dashboard at `index.html` via **Live Server** (VS Code) or by hosting it on a web server.
-   - The interface will automatically connect to the secure gateway at `http://127.0.0.1:8000`.
+---
 
-## Architecture
-- **Frontend**: HTML5, Tailwind CSS, GSAP 3D Animations.
-- **Backend Proxy**: FastAPI (Python), uvicorn.
-- **AI Engine**: Roboflow Inference API (Deployed Model).
+## 🎨 UI/UX Design System
+
+- **Immersive GSAP Hero**: A 3D "Ultra Glitch" header synchronized with granular HTML Canvas `<PixelTrail />` elements.
+- **Radar Scan Overlays**: Real-time sweeping animations mapped precisely to 8px CSS grid gradients.
+- **Tactical Intel Cards**: Color-coded categorization modules representing `CRITICAL`, `MODERATE`, and `SAFE` severity contexts.
+
+---
+
+<div align="center">
+  Generated with System Integration Protocols - AI Pipeline Edition
+</div>
