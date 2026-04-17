@@ -11,8 +11,16 @@
 ---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWEycmE2NmhzZmtmczc0Zno4NjQxZ3pxZnp5bnQ2aXFnYWh2M2hkcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LMB3WqcKjENwV821Za/giphy.gif" alt="Scanning Animation" width="100%" style="border-radius: 12px; border: 1px solid rgba(255,183,3,0.3);"/>
+  <img src="docs/demo.webp" alt="Scanning Animation" width="100%" style="border-radius: 12px; border: 1px solid rgba(255,183,3,0.3);"/>
 </p>
+
+### 📸 Application Interface
+
+<p align="center">
+  <img src="docs/hero.png" width="49%" style="border-radius: 8px;"/>
+  <img src="docs/dashboard.png" width="49%" style="border-radius: 8px;"/>
+</p>
+
 
 </div>
 
