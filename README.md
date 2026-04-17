@@ -11,7 +11,7 @@
 ---
 
 <p align="center">
-  <img src="docs/demo.webp" alt="Scanning Animation" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"/>
+  <img src="docs/demo.gif" alt="Scanning Animation" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"/>
 </p>
 
 </div>
